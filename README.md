@@ -7,7 +7,7 @@ One is focused more on simulations and building waveform models:
 * and then we'll conclude by building our very own waveform surrogate model using some of the more simple numerical relativity waveforms for the SXS Collaboration's catalog!
   
 and one is focused more on gravitational wave theory and black hole perturbation theory:
-* the BMS symmetires and how they can be used to express waveforms in terms of BMS charges and fluxes,
+* the BMS symmetries and how they can be used to express waveforms in terms of BMS charges and fluxes,
 * and how to fit the ringdown phase of gravitational waves from binary black holes with quasi-normal modes.
 
 ### Getting started (Google Colab)
