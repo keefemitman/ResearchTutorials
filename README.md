@@ -43,7 +43,7 @@ Then, you'll need to install the relevant packages. If you are already one of th
 then running this installation is as easy as 
 
 ```
-uv pip install .
+uv sync
 ```
 
 Otherwise you can install via `pip` with
@@ -55,17 +55,20 @@ pip install .
 or create a `conda` environment with
 
 ```
-conda env create --name cca-tutorial --file=environments.yml | conda activate cca-tutorial
+conda env create --name research-tutorials --file=environments.yml | conda activate research-tutorials
 ```
 
 ### Loading the tutorial
-Everything for the tutorial can be found in the `Tutorial.ipynb` notebook.
+Everything for the tutorial can be found in the `Tutorial*.ipynb` notebooks.
 
 If you're using `uv`, this is again trivial by running
 ```
+uv run ipython kernel install --user --env VIRTUAL_ENV $(pwd)/.venv --name=research-tutorials
 uv run --with jupyter jupyter lab
 ```
-and then opening the notebook. If you've activated your conda environment, then this should also just be as simple as running
+and then opening the notebook and select the kernel `research-tutorials`.
+
+If instead you've activated your conda environment, then this should also just be as simple as running
 ```
 jupyter notebook Tutorial_SXSAndSurrogates.ipynb
 ```
@@ -73,9 +76,10 @@ or
 ```
 jupyter notebook Tutorial_BMSAndQNMs.ipynb
 ```
+
 If you don't want to activate your conda environment, but would rather creater a jupyter kernel, just run
 ```
-python -m ipykernel install --user --name=cca-tutorial
+python -m ipykernel install --user --name=research-tutorials
 ```
 and then load it in the notebook after starting it up.
 

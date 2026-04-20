@@ -25,33 +25,6 @@ wheels = [
 ]
 
 [[package]]
-name = "researchtutorials"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "forked-rompy" },
-    { name = "matplotlib" },
-    { name = "scikit-learn" },
-    { name = "sxs" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ipykernel" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "forked-rompy", specifier = ">=0.0.3" },
-    { name = "matplotlib", specifier = ">=3.10.3" },
-    { name = "scikit-learn", specifier = ">=1.7.0" },
-    { name = "sxs", specifier = ">=2025.0.12" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ipykernel", specifier = ">=6.29.5" }]
-
-[[package]]
 name = "certifi"
 version = "2025.4.26"
 source = { registry = "https://pypi.org/simple" }
@@ -734,6 +707,54 @@ wheels = [
 ]
 
 [[package]]
+name = "numpy-quaternion"
+version = "2024.0.13"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "scipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/63/a0/dad368bca6ef25e2c242fe9a774ee46143d2ab186c521fdc5342e95291a4/numpy_quaternion-2024.0.13.tar.gz", hash = "sha256:e155853fefdfb972b4674f47c30ddb12c825f3ab135a2ea14c67472905c49fd1", size = 66645, upload-time = "2025-11-24T18:51:56.73Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/44/3b/a944cd59ae64af8d9f30925f556b45d63bce135cdf304a4de755e23eea1c/numpy_quaternion-2024.0.13-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:4786147c63d2314d92d78f326de946fa093bb98555fd84e5e2e2911fdafb6240", size = 86642, upload-time = "2025-11-24T18:52:06.996Z" },
+    { url = "https://files.pythonhosted.org/packages/ff/8b/ed2d8f4ec184225ebaf5e2999dcc5ca558a9d517efc82fb2e5431eee7e5b/numpy_quaternion-2024.0.13-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:13233fdfff25230570a7f64af52ae11dcd4da37f9a8165df95a26e1b2e2dd62a", size = 61602, upload-time = "2025-11-24T18:52:05.748Z" },
+    { url = "https://files.pythonhosted.org/packages/29/db/370d466c6e1be404fe8bf881e36154d8da6374ec6b812e2c8e11e4804eae/numpy_quaternion-2024.0.13-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:6c7e846247cd8fb87be42c442bc59f079b1251d2a3121818f0bddd7d54c22267", size = 55710, upload-time = "2025-11-24T18:51:45.424Z" },
+    { url = "https://files.pythonhosted.org/packages/4c/04/03394fad3c7e0e56fd95c6534c85d248488a984b49cc635d4329dafe21bd/numpy_quaternion-2024.0.13-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:20629d806e1081dea5d7989271b7e1b5f38b4c9ad6e2a6add08be69739c80763", size = 188395, upload-time = "2025-11-24T18:52:00.97Z" },
+    { url = "https://files.pythonhosted.org/packages/52/69/564bcea574aa32bc59ddf34516c757b3a3ac32452b6d9a644126b4d2bcd5/numpy_quaternion-2024.0.13-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:dfe75b8e27429547e4b30f20d98a62909505409210a44355d7f2e0349cda0178", size = 183742, upload-time = "2025-11-24T18:52:10.291Z" },
+    { url = "https://files.pythonhosted.org/packages/3b/5b/3e6034b748629d7a23e9dac78a520ef7f12a41f385a2075d071ee11afdb9/numpy_quaternion-2024.0.13-cp311-cp311-win_amd64.whl", hash = "sha256:1d4d6207929a4121fd065105771161f5327d008f3b49591d24ea8b439a477466", size = 70259, upload-time = "2025-11-24T18:51:42.89Z" },
+    { url = "https://files.pythonhosted.org/packages/0a/75/429a5c49ae52afa1d401c0d1cedd0adb79dccb00f471b8d04153826263e1/numpy_quaternion-2024.0.13-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:9663e8692eea26cae1936ebaaf518805037c59dc75811df1b702279ff72a6ebe", size = 86878, upload-time = "2025-11-24T18:51:52.197Z" },
+    { url = "https://files.pythonhosted.org/packages/ba/b2/138065f2c50fd66b89623a5ee45d43d2341cfede4d7e0f7292075953ff12/numpy_quaternion-2024.0.13-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:95e35c3c1033984cdc0177c723f084c0e617d9065eb071287aae35b9d7f8d0f5", size = 61664, upload-time = "2025-11-24T18:52:18.211Z" },
+    { url = "https://files.pythonhosted.org/packages/dc/9c/6a64269df4f032d883c5da72052850ef94fb79743b70606719c1ca579c79/numpy_quaternion-2024.0.13-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:e64b15888c2d363fb1bd289f8d6f9785658edefe15acfc317395faca223a0ebb", size = 55904, upload-time = "2025-11-24T18:52:12.081Z" },
+    { url = "https://files.pythonhosted.org/packages/07/40/4058220b3d60890b62e0a2e8212e2546695827cf85e6186405ecf8ef33f1/numpy_quaternion-2024.0.13-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:cc2e037ad4269a8f7c9ccf37711cae16451745822e0e77db5a4da7c3633c51d1", size = 190755, upload-time = "2025-11-24T18:51:53.958Z" },
+    { url = "https://files.pythonhosted.org/packages/76/e0/bdcef92b7b0eb83d2751f1994b584a7081c79be9e55096ac1ff9a16e7692/numpy_quaternion-2024.0.13-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:174b555490222e129621e4fa26389487d027881807d73f9c0c8de457cb93a6c4", size = 185219, upload-time = "2025-11-24T18:52:14.148Z" },
+    { url = "https://files.pythonhosted.org/packages/88/3c/2fad7bec16d2180c138721ef70bc6a0b42bbcf1f3783d22b9cd4804d6cbc/numpy_quaternion-2024.0.13-cp312-cp312-win_amd64.whl", hash = "sha256:a6f4b0d7002961e0d1e93fec77fc23b607f7840e99eeafe52d10502296601849", size = 70264, upload-time = "2025-11-24T18:52:03.798Z" },
+    { url = "https://files.pythonhosted.org/packages/83/60/135ab1c887344d4f1e70a4025733b2e9e19f2349ac21106b713911620a40/numpy_quaternion-2024.0.13-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:0cd3f2256debaffd8407d1829c1ced71d3b910e75245152d1be673fcb7f23f08", size = 86875, upload-time = "2025-11-24T18:51:37.313Z" },
+    { url = "https://files.pythonhosted.org/packages/4f/0b/26ba2dbfe74da3a956828dee249483fdb90d0f1b08b2a55872ff20e12736/numpy_quaternion-2024.0.13-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:070df97e1ad59d6a41b4759ddba53e214488de63c948f144c3c61c9374a64f8d", size = 61668, upload-time = "2025-11-24T18:51:57.82Z" },
+    { url = "https://files.pythonhosted.org/packages/af/2b/bb67708f88beea90bddc74229ac7eaa1d9c38c7415179e16a6cba013f5b3/numpy_quaternion-2024.0.13-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:87f062c9258baa5c00ee3dc8c90553314668551d8893d500e101eae25fc4826f", size = 55901, upload-time = "2025-11-24T18:51:50.39Z" },
+    { url = "https://files.pythonhosted.org/packages/fe/21/562f81ebae486f6068c12a2be7523c08c2a21110ed0773a1d38088248109/numpy_quaternion-2024.0.13-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:b5596e429f3c15d736f23380c7d054903e44fdd4d07a2b9af6f75ec6c9acfe4c", size = 190859, upload-time = "2025-11-24T18:51:47.196Z" },
+    { url = "https://files.pythonhosted.org/packages/2e/c4/3fe4f7957d6d79d508ff99a62951034bd19956f4d2c98ada26d5575ff3cc/numpy_quaternion-2024.0.13-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:1771afd3abe8477adc0af1fe7b2542eaebf31fafa64a134059e21f8b606d2f0e", size = 185263, upload-time = "2025-11-24T18:51:38.218Z" },
+    { url = "https://files.pythonhosted.org/packages/fb/cc/88846e576745bb962790d3a6581963a0b248a9335a800f601dc52fecd258/numpy_quaternion-2024.0.13-cp313-cp313-win_amd64.whl", hash = "sha256:a8a847a3dbce1dbb4275d6e01ce59ac876da142affb82e6d66814fc1db3f4793", size = 70267, upload-time = "2025-11-24T18:52:15.42Z" },
+    { url = "https://files.pythonhosted.org/packages/77/77/77e84011dbe4bb08504e45052d7177efeed90cc66139922b6de467a9a4a3/numpy_quaternion-2024.0.13-cp313-cp313t-macosx_10_13_universal2.whl", hash = "sha256:eb438f4d9ab1fd1697f884be0840944d0c55dd934065811473237451b96ec2e2", size = 87811, upload-time = "2025-11-24T18:51:39.625Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/3b/343695fc743d2a0814ef9a221a52733c576abe08d17f3795e5b84bfa8355/numpy_quaternion-2024.0.13-cp313-cp313t-macosx_10_13_x86_64.whl", hash = "sha256:e0a299e25b6d874b4cd169afd0cf4b703a4ddc8817513eb425fa5a6488001116", size = 62102, upload-time = "2025-11-24T18:51:52.997Z" },
+    { url = "https://files.pythonhosted.org/packages/d8/c5/6a105c9a4ffbe3ec51cc45ed916f0a0d9aae35dc9a8dfd29e8cd66122043/numpy_quaternion-2024.0.13-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:41a84c60e50533f833c536475dc49bce4e53a5c100c639cf503f37216b49c8f8", size = 56447, upload-time = "2025-11-24T18:51:48.48Z" },
+    { url = "https://files.pythonhosted.org/packages/61/1b/17612dc0517f30ea2679de936975a5c6c827e299ddcbb2b7cc9471b3de10/numpy_quaternion-2024.0.13-cp313-cp313t-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:af4ee46bd834a822c200fb1dc8dc15bee8fa97e2286227fdd0acf243e6974fb9", size = 196462, upload-time = "2025-11-24T18:51:36.13Z" },
+    { url = "https://files.pythonhosted.org/packages/ef/08/57ea9c58700211ef7ecbb30ee3bb076c9f9a4f12595f270b4cf5ea2da1e9/numpy_quaternion-2024.0.13-cp313-cp313t-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:77a6c9c10de8636cf3b7706045ef21edfc09746f73d4adb883b525ddcb19823a", size = 193631, upload-time = "2025-11-24T18:52:09.318Z" },
+    { url = "https://files.pythonhosted.org/packages/98/3b/f97ce15668d29ad79d7a34a5e3fecec8d1c22b713a7ade07ffa74aa0f952/numpy_quaternion-2024.0.13-cp313-cp313t-win_amd64.whl", hash = "sha256:9700dd4c9a2ca19890a1fcfb559e738b3d824ec8224e400eb146240cac03b0f7", size = 71032, upload-time = "2025-11-24T18:51:43.766Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/3f/ee965448f5617c2eda6c1a72dd2f47659ff7bf8ee15fc9f78e42eb8f4d84/numpy_quaternion-2024.0.13-cp314-cp314-macosx_10_15_universal2.whl", hash = "sha256:46d78886594559b2e9a35bc54461b3c1736a3b1442a34eec8a7c718ecbe617bb", size = 87135, upload-time = "2025-11-24T18:52:17.343Z" },
+    { url = "https://files.pythonhosted.org/packages/2c/bd/5b5ee95e61f5a8d7bce39a72a67f9efa9f268a8170bc96acd7fdb78c6afb/numpy_quaternion-2024.0.13-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:07368592539aa03c779177a44342acde65bf3e46e39387ae55f4cdc36eccdac7", size = 61812, upload-time = "2025-11-24T18:51:58.935Z" },
+    { url = "https://files.pythonhosted.org/packages/e1/a6/9d56ab21dcbbf2c903df23849a6b12f945ce2144d592424ca92a462121bb/numpy_quaternion-2024.0.13-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:053f63f9f27dca61435533cd3f912e6f7b8b0a3a770f05f846f2014939556b8d", size = 55921, upload-time = "2025-11-24T18:52:00.089Z" },
+    { url = "https://files.pythonhosted.org/packages/e4/f4/7a73bf4d5d3a181e412f9d276f0bf455c0ee20b803926c8e37701b82d05d/numpy_quaternion-2024.0.13-cp314-cp314-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:d2475745d8c5c97e28d9e15ad8a27ff5f9f0b89bb63580a971520da2ccc86f3e", size = 190699, upload-time = "2025-11-24T18:51:51.304Z" },
+    { url = "https://files.pythonhosted.org/packages/18/81/27a56ae61f9b956bcbd305a9ce6a34a72f87f311a61690ba2f389fb15023/numpy_quaternion-2024.0.13-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:45b12a16c902e645d5d815be3f9699dfa06223c33f56127ac1b611367681a622", size = 185281, upload-time = "2025-11-24T18:52:16.329Z" },
+    { url = "https://files.pythonhosted.org/packages/53/ae/669cdaf6e265dd36eaa74f47c19a6c10040f0fa29a96e24632b42ca2a308/numpy_quaternion-2024.0.13-cp314-cp314-win_amd64.whl", hash = "sha256:619d149ba8a6b97f51818f440c78c66cb64d92b4829014fca3f1a23f00d1a9ea", size = 71771, upload-time = "2025-11-24T18:52:08.496Z" },
+    { url = "https://files.pythonhosted.org/packages/17/c5/37db52a827f455c3b865ae065a8a1512d7d2d471bc95d912823a1fe3aa8a/numpy_quaternion-2024.0.13-cp314-cp314t-macosx_10_15_universal2.whl", hash = "sha256:ff5cdc7e34b540dbfd4b649deb042426e154b588eb9337a9b3694c9cbec1ccf8", size = 88044, upload-time = "2025-11-24T18:52:12.928Z" },
+    { url = "https://files.pythonhosted.org/packages/79/36/c568a39a706b1305c27f97d196dcb800820e7db7de11dc0cb4bae9971bbe/numpy_quaternion-2024.0.13-cp314-cp314t-macosx_10_15_x86_64.whl", hash = "sha256:cb6a3e770958591067e4a6aabbbea911edaf61cf15697f521ddce90f0594ac43", size = 62241, upload-time = "2025-11-24T18:51:33.203Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/3b/b90bf6d045f4b7dc810584da783c26835574dd1fac29f938981bae02723d/numpy_quaternion-2024.0.13-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:c687d35a223c64455a918153e54c7650996e0d82bd418b46721d55daab2b2652", size = 56446, upload-time = "2025-11-24T18:52:04.71Z" },
+    { url = "https://files.pythonhosted.org/packages/88/0d/39ea31d3a04b2b2b5165fcdb29d92c6d2a8ab9bbf14ce56528cf6360a4c2/numpy_quaternion-2024.0.13-cp314-cp314t-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:d7f36242bc655a30261cfaf2638b88093e210bfc946f57ed7b8582ce19239108", size = 196469, upload-time = "2025-11-24T18:51:49.389Z" },
+    { url = "https://files.pythonhosted.org/packages/b6/42/2fccac5c4627107758a49c99f61b09f70ba724a5be1c0a69e4856b4414ef/numpy_quaternion-2024.0.13-cp314-cp314t-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:835a79b24177a3b0af2479578de7745106b8c2dc34ebd0d930217dd4ee82f528", size = 193658, upload-time = "2025-11-24T18:51:55.745Z" },
+    { url = "https://files.pythonhosted.org/packages/99/95/d397789052e7929deaac93e2295ade90870c43d22a5965e5cc2e69efd5a1/numpy_quaternion-2024.0.13-cp314-cp314t-win_amd64.whl", hash = "sha256:a5f29103a49dde42c8cd013426c271bd24a503bd7a65496b5c11a3aecb106658", size = 72537, upload-time = "2025-11-24T18:51:40.787Z" },
+]
+
+[[package]]
 name = "packaging"
 version = "25.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1056,6 +1077,35 @@ wheels = [
 ]
 
 [[package]]
+name = "researchtutorials"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "forked-rompy" },
+    { name = "matplotlib" },
+    { name = "scikit-learn" },
+    { name = "scri" },
+    { name = "sxs" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "forked-rompy", specifier = ">=0.0.3" },
+    { name = "matplotlib", specifier = ">=3.10.3" },
+    { name = "scikit-learn", specifier = ">=1.7.0" },
+    { name = "scri", specifier = ">=2024.0.11" },
+    { name = "sxs", specifier = ">=2025.0.12" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=6.29.5" }]
+
+[[package]]
 name = "scikit-learn"
 version = "1.7.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1136,6 +1186,26 @@ wheels = [
 ]
 
 [[package]]
+name = "scri"
+version = "2024.0.11"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "h5py" },
+    { name = "numba" },
+    { name = "numpy" },
+    { name = "numpy-quaternion" },
+    { name = "scipy" },
+    { name = "spherical-functions" },
+    { name = "spinsfast" },
+    { name = "sxs" },
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/82/03/77b79305d50ab0a1a301c2064fb9baddcf54cad61680728e7156dec18c27/scri-2024.0.11.tar.gz", hash = "sha256:ba658ec5b376ddad0bbdc8a3bdec73d5525ab8c474d6ef040450e657248cc23a", size = 169306, upload-time = "2026-04-08T15:44:46.899Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/be/f6/0f98dece8730d459fc01710edb279ed0e642b66dc426ad2ed7a71c4daf9a/scri-2024.0.11-py3-none-any.whl", hash = "sha256:ff640c6dde5a7dd41cc85c24243f3e6c01cbd66b3115ecc0a3c5c09c012a9228", size = 147806, upload-time = "2026-04-08T15:44:45.557Z" },
+]
+
+[[package]]
 name = "semver"
 version = "3.0.4"
 source = { registry = "https://pypi.org/simple" }
@@ -1167,6 +1237,22 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/e7/d1/62370de5e7903b417bc427888116c953aac5b854143c83a0c8771d58c7e7/spherical-1.0.16.tar.gz", hash = "sha256:16040ea9ad4ce3438e4437456b3ec5e6f9f988828587f0ebf14efa139bbe8510", size = 82825, upload-time = "2025-03-27T15:44:58.519Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/fe/4d/a8efbf88a5c8eb5fedcc9626e1d3ac5912a06668d0e0d9b17e1dfd84e815/spherical-1.0.16-py3-none-any.whl", hash = "sha256:b7280eef576ee0937e683d01aac134990097e3557bf60f6730a2a9fded66b528", size = 55674, upload-time = "2025-03-27T15:45:00.099Z" },
+]
+
+[[package]]
+name = "spherical-functions"
+version = "2023.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numba" },
+    { name = "numpy" },
+    { name = "numpy-quaternion" },
+    { name = "scipy" },
+    { name = "spinsfast" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/46/64/c23f64b3ac1b8e460ad48c0ea1e1a016702ed88c5684aeb583dfd1765de1/spherical_functions-2023.0.2.tar.gz", hash = "sha256:2e425b10638d73fba0a68d9aa8c95e9002e6ce7ee83c2654840ccfcd1fa2834e", size = 388351, upload-time = "2025-09-08T18:51:55.586Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d6/c6/7a6d8f56d3efe2ddb2bc659c2b1f9ba01b8a27174733526b57e181ba23b0/spherical_functions-2023.0.2-py3-none-any.whl", hash = "sha256:cb3a7fbbf3728893a5c230226db8c4ce86ce4208a2453591043a7b3cccf55e64", size = 381889, upload-time = "2025-09-08T18:51:53.972Z" },
 ]
 
 [[package]]
