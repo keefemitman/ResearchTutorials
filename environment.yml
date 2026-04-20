@@ -1,10 +1,8 @@
-name: ringdown
+name: research-tutorials
 channels:
   - conda-forge
-  - defaults
 dependencies:
-  - python>=3.11
-  - forked-rompy>=0.0.3
-  - matplotlib>=3.10.3
-  - scikit-learn>=1.7.0
-  - sxs>=2025.0.12
+  - python=3.11
+  - pip
+  - pip:
+    - -r requirements.txt
