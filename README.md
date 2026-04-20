@@ -1,12 +1,12 @@
 # Gravitational Wave and Numerical Relativity Tutorials
 Welcome friends! In this repository you can find two tutorials that I've given over the years.
 
-One is focused more on simulations and building waveform models:
+[One](https://github.com/keefemitman/ResearchTutorials/blob/main/Tutorial_SXSAndSurrogates.ipynb) is focused more on simulations and building waveform models:
 * a brief introduction to numerical relativity, i.e., what it means to simulate a binary black hole coalescence,
 * how to interact with SXS Collaboration's catalog of NR simulations, i.e., how to load waveforms and plot them,
 * and then we'll conclude by building our very own waveform surrogate model using some of the more simple numerical relativity waveforms for the SXS Collaboration's catalog!
   
-and one is focused more on gravitational wave theory and black hole perturbation theory:
+and [one](https://github.com/keefemitman/ResearchTutorials/blob/main/Tutorial_BMSAndQNMs.ipynb) is focused more on gravitational wave theory and black hole perturbation theory:
 * the BMS symmetries and how they can be used to express waveforms in terms of BMS charges and fluxes,
 * and how to fit the ringdown phase of gravitational waves from binary black holes with quasi-normal modes.
 
