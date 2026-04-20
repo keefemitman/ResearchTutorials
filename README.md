@@ -1,8 +1,14 @@
-# The SXS Collaboration's Catalog of Numerical Relativity Simulations and an Introduction to the World of Waveform Surrogate Models
-Welcome friends! In our second GW group tutorial, we'll be covering
+# Gravitational Wave and Numerical Relativity Tutorials
+Welcome friends! In this repository you can find two tutorials that I've given over the years.
+
+One is focused more on simulations and building waveform models:
 * a brief introduction to numerical relativity, i.e., what it means to simulate a binary black hole coalescence,
 * how to interact with SXS Collaboration's catalog of NR simulations, i.e., how to load waveforms and plot them,
 * and then we'll conclude by building our very own waveform surrogate model using some of the more simple numerical relativity waveforms for the SXS Collaboration's catalog!
+  
+and one is focused more on gravitational wave theory and black hole perturbation theory:
+* the BMS symmetires and how they can be used to express waveforms in terms of BMS charges and fluxes,
+* and how to fit the ringdown phase of gravitational waves from binary black holes with quasi-normal modes.
 
 ### Getting started (Google Colab)
 
@@ -13,15 +19,16 @@ Just
 2. Click `File`, and then `Upload Notebook`, and then `GitHub`
 3. Paste the following url
     ```
-    https://github.com/keefemitman/SXSAndSurrogates
+    https://github.com/keefemitman/ResearchTutorials
     ```
     into the search bar, and  <ins>then click off the search bar</ins>
 
-4. Click `Tutorial.ipynb` (this will open the notebook)
-5. Click `Run all`
-6. Wait for the notebook to crash
-7. Click `Run all` again
-8. Enjoy! 🌊
+4. Click `Tutorial_SXSAndSurrogates.ipynb` (this will open the notebook)
+5. Or click `Tutorial_BMSAndQNMs.ipynb` (this will open the notebook)
+6. Click `Run all`
+7. Wait for the notebook to crash
+8. Click `Run all` again
+9. Enjoy! 🌊
 
 ### Getting started (running locally)
 To start this tutorial, you'll first need to clone the repository and `cd` into it
@@ -29,7 +36,7 @@ To start this tutorial, you'll first need to clone the repository and `cd` into 
 (feel free to change `my_copy_of_the_tutorial` to whatever you want):
 
 ```
-git clone git@github.com:keefemitman/SXSAndSurrogates.git my_copy_of_the_tutorial | cd my_copy_of_the_tutorial
+git clone git@github.com:keefemitman/ResearchTutorials.git my_copy_of_the_tutorial | cd my_copy_of_the_tutorial
 ```
 
 Then, you'll need to install the relevant packages. If you are already one of the cool kids and are using `uv` (https://docs.astral.sh/uv/),
@@ -60,7 +67,11 @@ uv run --with jupyter jupyter lab
 ```
 and then opening the notebook. If you've activated your conda environment, then this should also just be as simple as running
 ```
-jupyter notebook Tutorial.ipynb
+jupyter notebook Tutorial_SXSAndSurrogates.ipynb
+```
+or
+```
+jupyter notebook Tutorial_BMSAndQNMs.ipynb
 ```
 If you don't want to activate your conda environment, but would rather creater a jupyter kernel, just run
 ```
