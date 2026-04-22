@@ -7,6 +7,7 @@ requires-python = ">=3.11"
 dependencies = [
     "forked-rompy>=0.0.3",
     "matplotlib>=3.10.3",
+    "qnmfinder",
     "scikit-learn>=1.7.0",
     "scri>=2024.0.11",
     "sxs>=2025.0.12",
@@ -16,3 +17,6 @@ dependencies = [
 dev = [
     "ipykernel>=6.29.5",
 ]
+
+[tool.uv.sources]
+qnmfinder = { git = "https://github.com/keefemitman/qnmfinder" }
